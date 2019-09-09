@@ -17,7 +17,8 @@ public class WeatherFormatter {
 
     public String format(Weather weather) throws Exception {
         log.info("Formatting Weather Data");
-        Reader reader = new InputStreamReader(getClass().getClassLoader()
+        Reader reader;
+        reader = new InputStreamReader(getClass().getClassLoader()
                 .getResourceAsStream("output.vm"));
         VelocityContext context = new VelocityContext();
         context.put("weather", weather);
