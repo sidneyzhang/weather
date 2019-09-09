@@ -23,6 +23,9 @@ public class Main {
 
         System.out.println("this is zipcod "+ zipcode);
 
+        System.out.println("this is zipcod "+ zipcode);
+        System.out.println("this is zipcod "+ zipcode);
+
         // Start the program
         new Main(zipcode).start();
     }
