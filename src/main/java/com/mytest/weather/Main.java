@@ -21,6 +21,8 @@ public class Main {
         } catch (Exception e) {
         }
 
+        System.out.println("this is zipcod "+ zipcode);
+
         // Start the program
         new Main(zipcode).start();
     }
@@ -37,6 +39,9 @@ public class Main {
 
         // Parse Data
         Weather weather = new YahooParser().parse(dataIn);
+
+        // Format (Print) Data
+        System.out.print(new WeatherFormatter().format(weather));
 
         // Format (Print) Data
         System.out.print(new WeatherFormatter().format(weather));
