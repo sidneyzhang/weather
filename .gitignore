@@ -172,7 +172,12 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+<<<<<<< HEAD
 .idea
 *.iml
 *.orig
 
+=======
+*.iml
+.idea
+>>>>>>> hotfix second commit
